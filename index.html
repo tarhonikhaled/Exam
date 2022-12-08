@@ -10,9 +10,17 @@
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- FontAwesome Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <!-- Accordion Stylesheets -->
     <link rel="stylesheet" href="assets/jquery-ui-1.13.2.custom/jquery-ui.css">
+
+    <!-- My Stylesheets -->
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <!-- Less Files -->
+    <link rel="stylesheet/less" type="text/css" href="assets/css/mystyle.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
 </head>
 
 <body>
@@ -23,15 +31,15 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li href="#">Home</li>
-                    <li href="#about-us">About Us</li>
-                    <li href="#our-services">Services</li>
-                    <li href="#testionials">Testionials</li>
-                    <li href="#faqs">FAQs</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#our-services">Services</a></li>
+                    <li><a href="#testionials">Testionials</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
                 </ul>
             </div>
             <div class="contact-btn">
-                <button>Contact Us</button>
+                <a href="#contact-us" class="button primary">Contact Us</a>
             </div>
         </header>
         <section class="hero">
@@ -109,36 +117,36 @@
                 <div>
                     <img src="assets/img/mographics.jpg" alt="motion graphics">
                     <h4>motion graphics</h4>
-                    <p>We offer you the best motion graphic designs</p>
+                    <p>We offer you the best motion graphic designs We offer you the best motion graphic designs</p>
                 </div>
                 <div>
                     <img src="assets/img/cdesign.jpg" alt="cartoon design">
                     <h4>cartoon design</h4>
-                    <p>We offer you the best motion cartoon design</p>
+                    <p>We offer you the best motion cartoon design We offer you the best motion graphic designs</p>
                 </div>
                 <div>
                     <img src="assets/img/mdesign.jpg" alt="montage design">
                     <h4>montage design</h4>
-                    <p>We offer you the best motion montage design</p>
+                    <p>We offer you the best motion montage design We offer you the best motion graphic designs</p>
                 </div>
                 <div>
                     <img src="assets/img/mographics.jpg" alt="motion graphics">
                     <h4>motion graphics</h4>
-                    <p>We offer you the best motion graphic designs</p>
+                    <p>We offer you the best motion graphic designs We offer you the best motion graphic designs</p>
                 </div>
                 <div>
                     <img src="assets/img/cdesign.jpg" alt="cartoon design">
                     <h4>cartoon design</h4>
-                    <p>We offer you the best motion cartoon design</p>
+                    <p>We offer you the best motion cartoon design We offer you the best motion graphic designs</p>
                 </div>
                 <div>
                     <img src="assets/img/mdesign.jpg" alt="montage design">
                     <h4>montage design</h4>
-                    <p>We offer you the best motion montage design</p>
+                    <p>We offer you the best motion montage design We offer you the best motion graphic designs</p>
                 </div>
             </div>
         </section>
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="title">
                 <h2>testimonials</h2>
                 <p>Some of the testimonials of customers</p>
@@ -191,7 +199,7 @@
                 <h2>FAQ</h2>
                 <p>Our FAQ</p>
             </div>
-            <div id="accordion">
+            <div class="accordion" id="accordion">
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.?</h3>
                 <div>
                     <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
@@ -219,16 +227,14 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us">
+        <section class="contact-us" id="contact-us">
             <div class="title">
                 <h2>contact us</h2>
             </div>
             <div class="contact-form">
                 <form action="" method="post">
-                    <div class="name">
+                    <div class="name email">
                         <input type="text" name="" id="" placeholder="Enter Your Name">
-                    </div>
-                    <div class="email">
                         <input type="email" name="" id="" placeholder="Enter Your Email">
                     </div>
                     <div class="subject">
@@ -238,8 +244,8 @@
                         <textarea name="" id="" cols="50" rows="15" placeholder="Enter Your Message.."></textarea>
                     </div>
                     <div class="buttons">
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit" class="button primary">
+                        <input type="reset" value="Reset" class="button secondary">
                     </div>
                 </form>
             </div>
@@ -251,15 +257,29 @@
                 </div>
                 <div class="featured-links">
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Pricing</li>
-                        <li>Features</li>
-                        <li>Contact</li>
-                        <li>Terms</li>
-                        <li>Privacy</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
                     </ul>
                 </div>
+                <div class="social-media">
+                    <div class="insta">
+                        <a href="#"></a>
+                    </div>
+                    <div class="whats">
+                        <a href="#"></a>
+                    </div>
+                    <div class="face">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>© 2022 Khaled. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
