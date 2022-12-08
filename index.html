@@ -21,6 +21,9 @@
     <!-- Less Files -->
     <link rel="stylesheet/less" type="text/css" href="assets/css/mystyle.less" />
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/js/myjs.js"></script>
 </head>
 
 <body>
@@ -40,6 +43,19 @@
             </div>
             <div class="contact-btn">
                 <a href="#contact-us" class="button primary">Contact Us</a>
+            </div>
+            <div class="mobile-nav">
+                <button class="burger-menu"></button>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#our-services">Services</a></li>
+                        <li><a href="#testionials">Testionials</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#contact-us" class="button primary">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section class="hero">
@@ -286,7 +302,6 @@
 
 
     <!-- javascript -->
-    <script src="assets/vendors/jquery.min.js"></script>
     <script src="assets/owlcarousel/owl.carousel.js"></script>
     <script>
         $('.owl-carousel.hero').owlCarousel({
